@@ -15,10 +15,13 @@ Frameworks e Bibliotecas
 ● Utilização de Bootstrap v5.3 e suas bibliotecas CSS e JS
 arquivos (src/rotas/);
 
+
 ● Responsividade mobile-first;
+
 ● Layout adaptado para:
 ■ celular;
 ■ área de trabalho.
+
 ● Paleta de Cores:
 ■ Modo Escuro: fundo preto/cinza escuro, laranja queimado, azul escuro e detalhes brancos; contraste confortável.
 ● Transições suaves;
@@ -31,7 +34,9 @@ Componentes Principais
 ● Grade de Produto;
 ● CartãoProduto;
 ● Barra de navegação;
+
 Componentes Globais
 ● Rodapé;
 Feedback Visual e UX
+
 ● Feedback visual em botões. Dashboard e Gráficos
