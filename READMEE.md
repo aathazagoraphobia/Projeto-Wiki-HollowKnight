@@ -5,7 +5,7 @@ Equipe: \
 • Rebeca de Araújo Carneiro \
 • Raphael Nagash Fernandes de Lima \
 • João Paulo Jardim Ziviani \
-• Pedro Vitor Gonçalves Brasil \
+• Pedro Vitor Gonçalves Brasil 
 
 Objetivo Geral:
 Desenvolver uma wiki descoberta ao jogo Hollow Knight com o objetivo de ensinar e divulgar informações diversas sobre a interface do jogo, como também seu desenvolvimento e diversas curiosidades; mude o início da wiki com o feedback dos visitantes através do formulário disponível dentro do site.
