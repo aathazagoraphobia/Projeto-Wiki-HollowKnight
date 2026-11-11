@@ -8,4 +8,4 @@ Equipe: \
 • Pedro Vitor Gonçalves Brasil 
 
 Objetivo Geral:
-Desenvolver uma wiki descoberta ao jogo Hollow Knight com o objetivo de ensinar e divulgar informações diversas sobre a interface do jogo, como também seu desenvolvimento e diversas curiosidades; mude o início da wiki com o feedback dos visitantes através do formulário disponível dentro do site.
+Desenvolver uma wiki voltada ao jogo Hollow Knight com o objetivo de ensinar e divulgar informações variadas sobre a interface do jogo, como também seu desenvolvimento e diversas curiosidades; visando o aprimoro da wiki com o feedback de visitantes através do formulário disponível dentro do site.
