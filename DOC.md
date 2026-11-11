@@ -1,3 +1,5 @@
+# Documentação do projeto
+
 O projeto possuirá:
 
 • Front-end produzido com HTML e estilizado utilizando CSS e JS
