@@ -56,3 +56,32 @@ if (feedbackForm) {
             "Obrigado pelo seu feedback!";
     });
 }
+
+
+/* ===== Fallback e lazy loading de imagens (todas as páginas) ===== */
+const IMG_FALLBACK =
+    "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='400' height='250'><rect width='100%' height='100%' fill='%23222'/><text x='50%' y='50%' fill='%23fff' font-size='18' text-anchor='middle' dominant-baseline='middle'>Imagem indisponível</text></svg>";
+
+function aplicarFallback(img) {
+    // evita loop infinito caso o próprio fallback falhe
+    if (img.dataset.fallback === "true") return;
+    img.dataset.fallback = "true";
+    img.removeAttribute("srcset");
+    img.src = IMG_FALLBACK;
+    if (!img.alt) {
+        img.alt = "Imagem indisponível";
+    }
+}
+
+document.querySelectorAll("img").forEach((img) => {
+    if (!img.hasAttribute("loading")) {
+        img.loading = "lazy";
+    }
+
+    img.addEventListener("error", () => aplicarFallback(img));
+
+    // caso a imagem já tenha falhado antes de o script rodar
+    if (img.complete && img.naturalWidth === 0) {
+        aplicarFallback(img);
+    }
+});
