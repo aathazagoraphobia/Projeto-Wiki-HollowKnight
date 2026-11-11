@@ -1,7 +1,3 @@
-Objetivo Geral:
-
-Desenvolver uma wiki descoberta ao jogo Hollow Knight com o objetivo de ensinar e divulgar informações diversas sobre a interface do jogo, como também seu desenvolvimento e diversas curiosidades; mude o início da wiki com o feedback dos visitantes através do formulário disponível dentro do site.
-
 O projeto possuirá:
 
 • Front-end produzido com HTML e estilizado utilizando CSS e JS
