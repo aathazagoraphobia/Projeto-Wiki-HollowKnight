@@ -52,8 +52,33 @@ if (feedbackForm) {
             return;
         }
 
-        statusMessage.textContent =
-            "Obrigado pelo seu feedback!";
+        // Formulário válido: leva o usuário para a página de agradecimento.
+        window.location.href = "obrigado.html";
+    });
+}
+
+
+/* ===== Botão que recolhe/expande o formulário de feedback ===== */
+// Só roda em páginas que têm o botão #feedback-toggle e o bloco #feedback-form-collapse.
+const feedbackToggle = document.querySelector("#feedback-toggle");
+const feedbackCollapse = document.querySelector("#feedback-form-collapse");
+
+if (feedbackToggle && feedbackCollapse) {
+    const textoAbrir = feedbackToggle.textContent.trim(); // texto original do botão
+    const textoFechar = "Fechar formulário";
+
+    // O formulário começa recolhido. Isso é feito aqui no JS (e não no HTML)
+    // para que, se o JS falhar, o formulário continue visível para o usuário.
+    feedbackCollapse.hidden = true;
+    feedbackToggle.setAttribute("aria-expanded", "false");
+
+    feedbackToggle.addEventListener("click", () => {
+        const estaAberto = feedbackToggle.getAttribute("aria-expanded") === "true";
+
+        // "hidden" é um atributo nativo do HTML: esconde ou mostra sem precisar de CSS.
+        feedbackCollapse.hidden = estaAberto;
+        feedbackToggle.setAttribute("aria-expanded", String(!estaAberto));
+        feedbackToggle.textContent = estaAberto ? textoAbrir : textoFechar;
     });
 }
 
