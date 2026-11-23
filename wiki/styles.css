@@ -295,7 +295,7 @@ a {
     margin: 4rem auto 0;
 }
 
-.expansions > .eyebrow,
+.expansions > .focus,
 .expansions > h2,
 .expansions-intro {
     text-align: center;
@@ -408,7 +408,7 @@ a {
     height: auto;
 }
 
-.eyebrow {
+.focus {
     margin: 0 0 1rem;
     color: #ffae42;
     font-size: 0.75rem;
@@ -932,7 +932,7 @@ a:focus-visible {
         box-shadow: 0 8px 30px rgba(255, 255, 255, 0.05);
     }
 
-    .eyebrow {
+    .focus {
         margin: 0 0 1rem;
         color: #aaaaaa;
         font-size: 0.75rem;
